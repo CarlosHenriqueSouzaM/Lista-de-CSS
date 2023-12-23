@@ -1,0 +1,64 @@
+.conteiner{
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 18% 56% 28%;
+    grid-template-areas: 
+    "header header header"
+    "aside1 main aside2";  
+    height: 100%;
+}
+
+.botao{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 24px;
+    background-color: rgb(230, 223, 223);
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(201, 194, 194);
+    grid-area: header;
+    border: solid 1px;
+    border-bottom: none;
+    text-align: center;
+}
+
+main{
+    background-color: rgb(240, 233, 233);
+    grid-area: main;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    padding: 3%;
+}
+
+#aside1{
+    background-color: rgb(230, 223, 223);
+    grid-area: aside1;
+    border: solid 1px;
+    padding: 8%;
+}
+
+#aside2{
+    background-color: rgb(230, 223, 223);
+    grid-area: aside2;
+    padding: 3%;
+    border: solid 1px;
+}
